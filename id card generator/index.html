@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ID Card Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <h1>ID Card Generator</h1> 
+    <div class="form">
+      <h2>Student Details</h2>
+      <form id="studentForm">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label for="college">College:</label>
+          <input type="text" id="college" required>
+        </div>
+        <div>
+          <label for="id">Student ID:</label>
+          <input type="text" id="id" required>
+        </div>
+        <div>
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" accept="image/*" required>
+        </div>
+        <div>
+          <button type="button" onclick="generateCard()">Generate Card</button>
+        </div>
+      </form>
+    </div>
+    <div class="card" id="card">
+      <h2>Virtual ID Card</h2>
+      <div id="cardContent">
+        <div id="cardImage"></div>
+        <div id="cardDetails"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
